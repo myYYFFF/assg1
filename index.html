@@ -1,3 +1,87 @@
-<html>
-    <h1>test</h1>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('素材/WhatsApp Image 2024-11-16 at 15.44.49_3e0b1cec.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 顶部导航栏样式 */
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* 中心文字的样式 */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 50px; /* 第一行字较大 */
+        }
+
+        .content h2 {
+            font-size: 30px; /* 第二行字稍小 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 背景图 -->
+    <div class="background"></div>
+
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <a href="#contact-us">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#about-us">About Us</a>
+    </div>
+
+    <!-- 中心文字 -->
+    <div class="content">
+        <h1>Vita Tech</h1>
+        <h2>Where technology meets humanity</h2>
+    </div>
+
+</body>
 </html>
