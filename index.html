@@ -1,87 +1,93 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主页</title>
+    <title>Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
     <style>
-
-        body, html {
-            height: 100%;
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
 
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('素材/WhatsApp Image 2024-11-16 at 15.44.49_3e0b1cec.jpg'); 
+        /* Fullscreen background image */
+        .background-container {
+            background-image: url('素材/WhatsApp Image 2024-11-16 at 15.44.44_3deae4d3.jpg'); /* Replace with your own image */
             background-size: cover;
             background-position: center;
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
-        /* 顶部导航栏样式 */
-        .navbar {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        .navbar a {
+        body {
+            font-family: 'Orbitron', sans-serif;
             color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
         }
 
-        .navbar a:hover {
+
+        .top-bar {
+            position: absolute;
+            top: 30px; 
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            z-index: 1; 
+        }
+
+        .top-bar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight:500;
+        }
+
+        /* Hover effect for links */
+        .top-bar a:hover {
             text-decoration: underline;
         }
 
-        /* 中心文字的样式 */
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
+        /* Centered text styling */
+        .centered-text {
             text-align: center;
+            padding-top: 100px;
         }
 
-        .content h1 {
-            font-size: 50px; /* 第一行字较大 */
+        .centered-text h1 {
+            font-size: 120px; /* Larger font for the first line */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to improve readability */
+            color: rgb(121, 255, 255);
         }
 
-        .content h2 {
-            font-size: 30px; /* 第二行字稍小 */
+        .centered-text p {
+            font-size: 30px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            font-weight: 550;
         }
     </style>
 </head>
 <body>
-
-    <!-- 背景图 -->
-    <div class="background"></div>
-
-    <!-- 顶部导航栏 -->
-    <div class="navbar">
+    <!-- Top bar -->
+    <div class="top-bar">
         <a href="#contact-us">Contact Us</a>
         <a href="#home">Home</a>
         <a href="#product">Product</a>
         <a href="#about-us">About Us</a>
     </div>
 
-    <!-- 中心文字 -->
-    <div class="content">
-        <h1>Vita Tech</h1>
-        <h2>Where technology meets humanity</h2>
+    <!-- Background image and centered text -->
+    <div class="background-container">
+        <div class="centered-text">
+            <h1>VITA   TECH</h1>
+            <p>Where technology meets humanity</p>
+        </div>
     </div>
-
 </body>
 </html>
