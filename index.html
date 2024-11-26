@@ -3,91 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page</title>
+    <title>index.html</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Fullscreen background image */
-        .background-container {
-            background-image: url('素材/WhatsApp Image 2024-11-16 at 15.44.44_3deae4d3.jpg'); /* Replace with your own image */
-            background-size: cover;
-            background-position: center;
-            height: 100vh; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        body {
-            font-family: 'Orbitron', sans-serif;
-            color: white;
-        }
-
-
-        .top-bar {
-            position: absolute;
-            top: 30px; 
-            width: 100%;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            z-index: 1; 
-        }
-
-        .top-bar a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight:500;
-        }
-
-        /* Hover effect for links */
-        .top-bar a:hover {
-            text-decoration: underline;
-        }
-
-        /* Centered text styling */
-        .centered-text {
-            text-align: center;
-            padding-top: 100px;
-        }
-
-        .centered-text h1 {
-            font-size: 120px; /* Larger font for the first line */
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow to improve readability */
-            color: rgb(121, 255, 255);
-        }
-
-        .centered-text p {
-            font-size: 30px; 
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-            font-weight: 550;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top bar -->
-    <div class="top-bar">
-        <a href="#contact-us">Contact Us</a>
-        <a href="#home">Home</a>
-        <a href="#product">Product</a>
-        <a href="#about-us">About Us</a>
-    </div>
 
-    <!-- Background image and centered text -->
-    <div class="background-container">
-        <div class="centered-text">
-            <h1>VITA   TECH</h1>
-            <p>Where technology meets humanity</p>
+<!-- Navbar -->
+<div class="top-bar">
+    <a href="#home">Home</a>
+    <a href="#product">Product</a>
+    <a href="#contact-us">Contact Us</a>
+</div>
+
+<!-- Home Page Section -->
+<div id="home" class="home-container">
+    <div class="centered-text">
+        <h1>VITA TECH</h1>
+        <p>Where technology meets humanity</p>
+    </div>
+</div>
+
+<!-- Product Page Section -->
+<div id="product" class="product-container">
+    <div class="centered-text">
+        <h1>We Can Make You</h1>
+        <p>Your Journey Our Innovation</p>
+    </div>
+</div>
+
+<div class="scrollable-content">
+    <div class="content-section">
+        <img src="素材/Firefly 20241030184045.png" alt="FlexArm EX-5"> 
+        <div class="text">
+            <h2>FlexArm EX-5</h2>
+            <p>The FlexArm EX-5 by Vita-Tech is a state-of-the-art,
+                biomechanical arm exoskeleton designed to enhance upper body strength, 
+                flexibility, and endurance. Ideal for individuals in physically demanding 
+                roles or those recovering from injuries, the EX-5 provides advanced strength 
+                augmentation, intuitive control, and seamless movement. This lightweight exoskeleton 
+                leverages Vita-Tech’s proprietary NeuroLink Interface technology, translating user intent into precise,
+                powerful motion.</p>
         </div>
     </div>
+</div>
+
+<!-- Contact Page Section -->
+<div id="contact-us" class="contact-container">
+    <h1>Connect to advance</h1>
+    <p>Your best mobility solution</p>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script src="script.js"></script> <!-- Link to your external JavaScript file -->
 </body>
 </html>

@@ -1,0 +1,220 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Navbar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.top-bar a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: rgb(172, 172, 172);
+}
+
+/* Home Section */
+.home-container {
+    height: 100vh;
+    background-image: url('素材/bed2591f723244f07bc4bf382f97103c.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-container h1 {
+    font-size: 4vw;
+    color: rgb(121, 255, 255);
+}
+
+.home-container p {
+    font-size: 2vw;
+}
+
+/* Product Section */
+.product-container {
+    background-image: url('素材/9d9d3db33e6c862d7671c2138d553f94.gif');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-container h1 {
+    font-size: 3vw;
+    color: rgb(121, 255, 255);
+}
+
+.product-container p {
+    font-size: 1.5vw;
+    font-weight: 550;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.content-section img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1 1 300px; /* Responsive behavior */
+}
+
+.content-section .text {
+    flex: 1 1 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.content-section h2 {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+    color: rgb(121, 255, 255);
+}
+
+.content-section p {
+    font-size: 1.2vw;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-container {
+    min-height: 100vh;
+    background-image: url('素材/3b73b020d6dbfd11eb378d77b0bbe8c3.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    color: rgb(121, 255, 255);
+}
+
+.contact-container p {
+    font-size: 1.5vw;
+    margin-bottom: 40px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px; /* Caps the width on larger screens */
+}
+
+.contact-container input,
+.contact-container textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-container button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(121, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-container button:hover {
+    background-color: rgb(100, 230, 230);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Home and Product Text Resize */
+    .home-container h1,
+    .product-container h1 {
+        font-size: 5vw;
+    }
+
+    .home-container p,
+    .product-container p {
+        font-size: 3vw;
+    }
+
+    /* Content Section */
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content-section img {
+        max-width: 100%; /* Take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .content-section .text {
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    .content-section h2 {
+        font-size: 5vw;
+    }
+
+    .content-section p {
+        font-size: 3.5vw;
+    }
+
+    /* Contact Form */
+    .contact-container form {
+        width: 100%; /* Maximize space */
+    }
+}
+
