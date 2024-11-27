@@ -101,7 +101,7 @@ body {
     max-width: 45%;
     height: auto;
     border-radius: 10px;
-    flex: 1 1 300px; /* Responsive behavior */
+    flex: 1 1 300px; 
 }
 
 .content-section .text {
@@ -150,7 +150,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-width: 500px; /* Caps the width on larger screens */
+    max-width: 500px; 
 }
 
 .contact-container input,
