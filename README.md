@@ -43,6 +43,27 @@ TECHNOLOGY USED
 
 
 TESTING
+1.Contact form:
+Go to the "Contact Us" page
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
+2.NavBar
+Try to look for products and click the "products", navigate to the products page and saw the products
+Looks exactly the same on chrome and edge.The text and images are well orgnaized in mobile phone view.
+
+
+
+
+CREDITS
+
+Media
+The images used in the site are obtained from pinterest
+
+Acknowledgement
+Recieved inspiration for this project from DIGITAL COVER
+
+
 
 
 
