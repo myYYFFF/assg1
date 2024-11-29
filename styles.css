@@ -21,6 +21,7 @@ body {
     text-align: center;
     padding: 15px 0;
     z-index: 10;
+    background-color: rgb(13, 20, 21);
 }
 
 .top-bar a {
